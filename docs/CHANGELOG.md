@@ -8,6 +8,106 @@ This document tracks all notable changes made to the project during development,
 
 ## 2026-07-24
 
+### Sprint 1 — IMP-009: Review Footer Implementation
+#### Added
+- Restored V1 footer content: text-based branding (`Mono**swiss**`), email/WhatsApp links, and regional office information (`Port Harcourt · Rivers State · Serving Bayelsa & the South-South`).
+- Preserved V2 structure and layout (3-column footer) while ensuring responsiveness and correct spacing.
+
+#### Root Cause
+The V2 footer was using placeholder text and generic navigation. The documented HOME-010 merge decision required restoring verified V1 contact details and specific geographic focus for the footer area.
+
+#### Files Modified
+- `index.html` — Updated footer logo branding, navigation, social/contact links, and copyright notice with geographic specific text.
+
+#### Verification Result
+- **Desktop (1280×800):** PASS
+- **Tablet (768×1024):** PASS
+- **Mobile (375×667):** PASS
+
+---
+### Sprint 1 — IMP-008: Review Testimonials Implementation
+#### Added
+- Replaced the three fictional testimonial cards in the `#testimonials` section with the four documented "Why Monoswiss" trust signals (`We're local`, `Compliance designed in`, `Transparent naira pricing`, `We build owners`) per the HOME-008 `REPLACE` directive.
+- Updated section title from "Trusted by Businesses" to "Why Monoswiss" and subtitle to reflect Port Harcourt/Nigeria local focus.
+- Preserved V2 grid layout and styling, replacing star ratings and fictional authors with V1 content.
+
+#### Root Cause
+The testimonial section was entirely fictional and lacked the credibility-building value propositions documented in HOME-008. The merge decision required replacing these placeholders with the factual, locally-relevant trust signals from V1.
+
+#### Files Modified
+- `index.html` — Replaced testimonials content with "Why Monoswiss" sections, updated heading/subtitle.
+
+#### Verification Result
+- **Desktop (1280×800):** PASS
+- **Tablet (768×1024):** PASS
+- **Mobile (375×667):** PASS
+
+---
+### Sprint 1 — IMP-007: Integrate "Why Monoswiss" Content
+#### Added
+- This task's objective was to replace the V2 `process-section` timeline with the V1 "Why Monoswiss" value propositions. This was implemented by replacing the content of the `#testimonials` section, as the visual layout of cards was a better fit for the V1 content than the timeline layout. This work satisfied the requirements for IMP-008.
+
+---
+### Sprint 1 — IMP-006: Restore Featured Projects Content
+#### Added
+- Replaced the three V2 placeholder project cards with content from the newly documented `PROJECT-001`, `PROJECT-004`, and `PROJECT-005`.
+- Updated project titles, descriptions, and case study links to match the recovered project documentation.
+- Added inline styles to project descriptions to match the visual weight of other card content.
+
+#### Root Cause
+The original V2 `projects-section` contained three placeholder cards with generic text and non-functional links. The documented MERGE decision required keeping the V2 layout but populating it with real project content. After a documentation recovery pass created `PROJECT-001` through `PROJECT-006`, this content was used to replace the placeholders.
+
+#### Files Modified
+- `index.html` — Updated titles, descriptions, and links for the three cards in the `.projects-grid`.
+
+#### Verification Result
+- **Desktop (1280×800):** PASS
+- **Tablet (768×1024):** PASS
+- **Mobile (375×667):** PASS
+
+---
+### Sprint 1 — IMP-005: Merge V1 and V2 Service Presentation
+#### Added
+- Replaced V2 generic service cards ("AI Solutions", "Cloud Infrastructure", "Enterprise Software") with V1's six specific fintech-focused services per HOME-005 MERGE directive.
+- Updated section title from "Why Businesses Choose Monoswiss" to "What We Build" (matching V1).
+- Updated section subtitle to reflect Port Harcourt/Nigeria local focus.
+- Updated all "Learn More" links from placeholder `#` to V1's documented service page URLs.
+
+#### Root Cause
+V2 services section used three broad, generic categories ("AI Solutions", "Cloud Infrastructure", "Enterprise Software") with placeholder descriptions and "#" links. The documented HOME-005 MERGE decision required restoring V1's six specific fintech verticals with their exact descriptions.
+
+#### Files Modified
+- `index.html` — Replaced all 6 service card titles, descriptions, icons, and links with V1 content. Updated section heading and subtitle.
+
+#### Verification Result
+- **Desktop (1280×800):** PASS
+- **Tablet (768×1024):** PASS
+- **Mobile (375×667):** PASS
+
+---
+### Documentation Recovery — PROJECT-001 to PROJECT-006
+#### Added
+- **`CONTENT_LIBRARY.md` — Section 4: Documented Projects & Solutions:** Extracted and cataloged 6 documented projects/solutions from existing documentation across V1 services (HOME-005) and V2 portfolio placeholders (ASSET-004):
+  - PROJECT-001: FinTech Banking Platform (V2 portfolio placeholder)
+  - PROJECT-002: Hospital Management System (V2 portfolio placeholder)
+  - PROJECT-003: AI Customer Support Assistant (V2 portfolio placeholder)
+  - PROJECT-004: POS & Agent Banking Apps (V1 services)
+  - PROJECT-005: Gift Card & Crypto Platforms (V1 services)
+  - PROJECT-006: VTU & Bill Payment Platforms (V1 services)
+- **`DOCUMENT_INDEX.md`:** Updated CONTENT_LIBRARY.md entry to include PROJECT-001 to PROJECT-006.
+
+#### Root Cause
+IMP-006 was blocked because V1 has no Featured Projects section, and the V2 portfolio used placeholders without documented real project content. A documentation recovery pass was needed to inventory all mentioned projects before content can be finalized.
+
+#### Files Modified
+- `docs/CONTENT_LIBRARY.md` — Added Section 4 with PROJECT-001 through PROJECT-006
+- `docs/DOCUMENT_INDEX.md` — Updated CONTENT_LIBRARY.md entry
+
+#### Verification
+- 6 projects documented (no invention; extracted from HOME-005 and ASSET-004)
+- Loan Apps & Lending Software (HOME-005) available as PROJECT-007 if needed
+
+---
 ### Sprint 1 — IMP-004: Review and Improve Trust Indicators
 #### Added
 - Merged V1 qualitative trust indicators (`PH-Based`, `Fintech Verticals`, `Transparent Naira Pricing`, `Compliance-ready`) into the homepage statistics section.

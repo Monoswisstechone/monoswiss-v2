@@ -20,12 +20,11 @@
 | IMP-002 | HOME-002 | Restore hero heading and subtitle | High | ⏸️ Pending | |
 | IMP-003 | HOME-002 | Fix hero animation timing | High | ✅ Completed | Implementation: COMPLETE, Automated Verification: PASS |
 | IMP-004 | HOME-003 | Review trust indicators implementation | Medium | ✅ Completed | Implementation: COMPLETE, Automated Verification: PASS |
-| IMP-005 | HOME-005 | Merge V1 and V2 service presentation | High | ⏸️ Pending | |
-| IMP-006 | HOME-006 | Redesign Featured Projects layout (3-column desktop) | High | ⏸️ Pending | |
-| IMP-007 | HOME-007 | Integrate "Why Monoswiss" content | High | ⏸️ Pending | |
-| IMP-008 | HOME-008 | Review testimonials implementation | Medium | ⏸️ Pending | |
-| IMP-009 | HOME-009 | Improve contact section | Medium | ⏸️ Pending | |
-| IMP-010 | HOME-010 | Review footer implementation | Medium | ⏸️ Pending | |
+| IMP-005 | HOME-005 | Merge V1 and V2 service presentation | High | ✅ Completed | Implementation: COMPLETE, Automated Verification: PASS |
+| IMP-006 | HOME-006 | Redesign Featured Projects layout (3-column desktop) | High | ✅ Completed | Implementation: COMPLETE, Automated Verification: PASS |
+| IMP-007 | HOME-007 | Integrate "Why Monoswiss" content | High | ✅ Completed | Implementation: COMPLETE, Automated Verification: PASS |
+| IMP-008 | HOME-008 | Review testimonials implementation | Medium | ✅ Completed | Implementation: COMPLETE, Automated Verification: PASS |
+| IMP-009 | HOME-010 | Review footer implementation | Medium | ✅ Completed | Implementation: COMPLETE, Automated Verification: PASS |
 
 ---
 
