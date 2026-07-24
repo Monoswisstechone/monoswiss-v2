@@ -57,7 +57,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Animate Hero Numbers
                 if (targetElement.classList.contains('hero-stats') && !heroNumbersAnimated) {
-                    animateCounter('.hero-stats .stat-number');
+                    // Only animate numbers, not badges/text symbols
+                    animateCounter('.hero-stats .stat-number[data-target]');
                     heroNumbersAnimated = true;
                     observer.unobserve(targetElement);
                 }
