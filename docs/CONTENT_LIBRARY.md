@@ -14,7 +14,7 @@ This table tracks all placeholder images and their requirements for final assets
 
 | Section | Placeholder Reference | Description | Final Asset Path | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **Header** | `images/logo.png` | Main company logo | `images/logo-final.svg` | ⏸️ **Pending** |
+| **Header** | `images/logo.png` | Main company logo | `images/logo.png` (PNG raster file; saved as `.png` with SVG extension was a copy error) | ⚠️ **Note: File is PNG, not SVG** — works in browsers but not infinitely scalable |
 | **Projects** | `FinTech+Platform` | Mockup for the FinTech project | *[TBD]* | ⏸️ **Pending** |
 | **Projects** | `HMS+Dashboard` | Mockup for the Hospital Mgmt System | *[TBD]* | ⏸️ **Pending** |
 | **Projects** | `AI+Chatbot` | Mockup for the AI Support Assistant | *[TBD]* | ⏸️ **Pending** |
