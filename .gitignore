@@ -8,6 +8,7 @@ lerna-debug.log*
 
 # Playwright
 playwright-report/
+playwright-report.json
 test-results/
 *.png
 
