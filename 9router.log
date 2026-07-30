@@ -1,0 +1,11 @@
+[33m⚠ Network-exposed: reachable at http://10.0.3.184:20128 (bound 0.0.0.0). Use --host 127.0.0.1 for local-only.[0m
+[2J[H
+[38;2;217;119;87m========================================[0m
+  [1m[38;2;217;119;87mChoose Interface (v0.5.45)[0m
+  [2m🚀 Server: [32mhttp://localhost:20128[0m[0m
+[38;2;217;119;87m========================================[0m
+
+ [7m[1m★ Web UI (Open in Browser)[0m
+  ☆ Terminal UI (Interactive CLI)
+  ☆ Hide to Tray (Background)
+  ☆ Exit
