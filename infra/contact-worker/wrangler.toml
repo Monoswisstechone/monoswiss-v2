@@ -1,0 +1,34 @@
+# Monoswiss Contact Form Worker Configuration
+#
+# This file provides the necessary configuration for Cloudflare Wrangler to
+# run the worker locally (`wrangler dev`) and deploy it (`wrangler deploy`).
+#
+name = "monoswiss-contact-form"
+main = "src/index.js"
+compatibility_date = "2026-07-29"
+
+[dev]
+# Local server configuration
+ip = "127.0.0.1"
+port = 8787
+
+# Local-only environment variables for development.
+# In production, these will be set as encrypted secrets in the Cloudflare dashboard.
+[vars]
+ALLOWED_ORIGINS = "https://monoswisstechone.github.io" # For local testing, allow requests from the live frontend origin.
+CONTACT_EMAIL_FROM = "test@monoswiss.com"
+CONTACT_EMAIL_TO = "test-recipient@example.com"
+# --- PLACEHOLDER SECRETS ---
+# The following values are placeholders. They must be replaced with real secrets
+# in the Cloudflare dashboard for the production worker to function. For local
+# development, wrangler uses these placeholder values.
+RESEND_API_KEY = "placeholder-resend-api-key"
+TURNSTILE_SECRET_KEY = "placeholder-turnstile-secret-key" # For local testing, use a test key from Turnstile dashboard.
+
+# KV Namespace binding for rate limiting.
+# The `id` is a placeholder and will be replaced by the actual namespace ID
+# created in the Cloudflare dashboard.
+[[kv_namespaces]]
+binding = "RATE_LIMIT_KV"
+id = "placeholder-kv-namespace-id"
+preview_id = "placeholder-kv-namespace-preview-id" # Preview uses a separate namespace
