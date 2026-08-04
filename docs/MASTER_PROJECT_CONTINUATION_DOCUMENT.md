@@ -69,7 +69,7 @@ Four Playwright tests are known to fail on the `main` branch due to a mismatch b
 
 ## 14. Remaining Roadmap (Checkpoint 5 onward)
 -   **Checkpoint 5:** Contact Section Refinement.
--   **Checkpoint 6:** Style the homepage Features section.
+-   **Checkpoint 6:** Homepage Featured Projects Refinement (HOME-006)
 -   **Checkpoint 7:** Style the homepage Testimonials section.
 -   **Checkpoint 8:** Style the homepage Blog section.
 -   **Checkpoint 9:** Style the global footer.
