@@ -15,6 +15,7 @@ This file serves as the master table of contents for all project documentation.
 | **HOMEPAGE_PRESERVATION_REPORT.md** | Blueprint for the homepage rebuild | HOME-001 to HOME-010 | Complete |
 | **IMPLEMENTATION_TRACKER.md** | Development task tracker | HOME-, DESIGN-, SEO-, ASSET- IDs | In Progress |
 | **CHANGELOG.md** | Change history | N/A | In Progress |
+| **MASTER_PROJECT_CONTINUATION_DOCUMENT.md** | Canonical project continuation guide and implementation roadmap | N/A | Complete |
 
 ## Documentation Progress
 
