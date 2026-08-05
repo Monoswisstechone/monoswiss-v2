@@ -1343,7 +1343,7 @@ body {
 
 @media (max-width: 768px) {
     .logo img { height: 44px; }
-    .nav-links, .cta-button { display: none; }
+    .nav-links { display: none; }
     .mobile-nav-toggle {
         display: flex;
         align-items: center;
