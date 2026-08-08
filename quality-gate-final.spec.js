@@ -38,17 +38,36 @@ test.describe('Sprint 1 Final Quality Gate', () => {
         await expect(navLinks).toBeVisible();
         const links = page.locator('.nav-links a');
         await expect(links).toHaveCount(5);
+        // Header CTA button should be visible on desktop
+        const headerCta = page.locator('.navbar .cta-button');
+        await expect(headerCta).toBeVisible();
+        const bgColor = await headerCta.evaluate(el => getComputedStyle(el).backgroundImage);
+        expect(bgColor).toContain('gradient');
+        await expect(headerCta).toHaveCSS('color', 'rgb(255, 255, 255)');
       } else {
         const hamburger = page.locator('.mobile-nav-toggle');
         await expect(hamburger).toBeVisible();
-      }
+        // CTA should not be visible when menu is closed on mobile/tablet
+        const headerCta = page.locator('.navbar .cta-button');
+        await expect(headerCta).not.toBeVisible();
 
-      // Header CTA button
-      const headerCta = page.locator('.navbar .cta-button');
-      await expect(headerCta).toBeVisible();
-      const bgColor = await headerCta.evaluate(el => getComputedStyle(el).backgroundImage);
-      expect(bgColor).toContain('gradient');
-      await expect(headerCta).toHaveCSS('color', 'rgb(255, 255, 255)');
+        // Open mobile menu
+        await hamburger.click();
+        await expect(page.locator('header.sticky-nav')).toHaveClass(/mobile-nav-open/);
+
+        // Assert links and CTA are visible inside the open menu
+        const mobileNavLinks = page.locator('.mobile-nav-open .nav-links a');
+        await expect(mobileNavLinks.first()).toBeVisible();
+        await expect(mobileNavLinks).toHaveCount(5);
+        const mobileCta = page.locator('.mobile-nav-open .cta-button');
+        await expect(mobileCta).toBeVisible();
+
+        // Close mobile menu
+        await hamburger.click();
+        await expect(page.locator('header.sticky-nav')).not.toHaveClass(/mobile-nav-open/);
+        await expect(mobileNavLinks.first()).not.toBeVisible();
+        await expect(mobileCta).not.toBeVisible();
+      }
 
       // --- 2. Hero Section ---
       const hero = page.locator('#home.hero');
