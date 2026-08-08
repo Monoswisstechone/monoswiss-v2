@@ -33,3 +33,4 @@ build/
 .vscode/
 .idea/
 Thumbs.db
+js/config.js

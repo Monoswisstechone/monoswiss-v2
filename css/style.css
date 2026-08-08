@@ -1448,3 +1448,30 @@ body {
     .hero-title { font-size: 2.5rem; }
     .hero-stats .stat-item { width: 100%; }
 }
+
+/* --- Checkpoint 11: Contact Form Styles --- */
+.form-response {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: var(--radius-md);
+    text-align: center;
+    display: none;
+}
+.form-response.success { background-color: rgba(46, 204, 113, 0.2); color: #2ecc71; border: 1px solid #2ecc71; }
+.form-response.error { background-color: rgba(231, 76, 60, 0.2); color: #e74c3c; border: 1px solid #e74c3c; }
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
